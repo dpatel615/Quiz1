@@ -18,5 +18,9 @@ t
 ## Mock-up Image
 https://github.com/dpatel615/Quiz1/blob/main/Assets/image/pin.jpg
 
-##
+## Deployed Application Link
+
+The deployed GitHub page for this web application can be found: https://dpatel615.github.io/Quiz1
+
+The GitHub repository for this web application can be found: https://github.com/dpatel615/Quiz1
 
