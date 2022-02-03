@@ -36,6 +36,7 @@ var timer = document.querySelector("#startTime");
 var questionDiv = document.querySelector("#QuestionDiv");
 var wrapper = document.querySelector("#wrapper");
 
+
 // second left is 25 seconds per question:
 var SecondsLeft = 101;
 // Holds interval time
@@ -102,7 +103,7 @@ function compare(event){
  }
  questionIndex++;
 
- if (questionIndex >= questions.lenght) {
+ if (questionIndex >= questions.length) {
      allDone ();
      createDiv.textContent = "End the Quiz!" + " " + "you got " + score + " /" + questions.length + " Correct!";
  } else {
@@ -115,7 +116,8 @@ function compare(event){
 function allDone() {
     questionDiv.innerHTML = " ";
     currentTime.innerHTML = " ";
-
+    
+    
    // heading 
    var createH1 = document.createElement("h1");
    createH1.setAttribute("id","createH1");
@@ -144,7 +146,10 @@ function allDone() {
    Label.textContent = " Enter Your Initials:   ";
 
    questionDiv.appendChild(Label);
-   
+   var Input = document.createElement("input");
+   Input.setAttribute("id","Input");
+   questionDiv.append(Input);
+  // heading 
    // buttom for submit
   var Submit = document.createElement("button");
   Submit.setAttribute("type", "submit");
@@ -154,7 +159,7 @@ function allDone() {
   
   // Event listener to capture initial and local storage for initial and score
     Submit.addEventListener("click",function(){
-        var Initials = createInput.value;
+        var Initials = Input.value;
 
         if (Initials == null) {
             console.log("No value entered! ");
@@ -165,11 +170,11 @@ function allDone() {
                 score: timeRemain
             }
             console.log(FinialScore);
-            var allScores = this.localStorage.getItem("allScores");
+            var allScores = localStorage.getItem("allScores");
             if (allScores == null) {
                 allScores = [];
             } else {
-                allScores = JASON.parse(allScores);
+                allScores = JSON.parse(allScores);
             }
            allScores.push(FinialScore);
            var NewScore = JSON.stringify(allScores);
@@ -179,7 +184,7 @@ function allDone() {
         }
     });
 
-
+   
 
 
 }
