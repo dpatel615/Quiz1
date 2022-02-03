@@ -1,0 +1,92 @@
+#wrapper {
+    position: absolute;
+    left: 45px;
+    top: 25px;
+    width: 500px;
+    height: 500px;
+    border: 1.5px solid palegreen;
+}
+h1 {
+    text-align: center;
+}
+
+li {
+    background-color: palegreen;
+    margin-top: 10px;
+    padding: 5px 15px;
+    width: 75%;
+    font-size: 24px;
+    color: black;
+}
+
+#startTime {
+    background-color: palegoldenrod;
+    margin-left: 40px;
+    padding: 18px 36px;
+    font-size: 24px;
+    color: black;
+}
+
+#QuestionDiv {
+    margin: 25px;
+}
+
+#CurrentTime {
+    float: right;
+}
+
+#GoBack {
+    background-color: palegreen;
+    position: relative;
+    padding: 12px;
+    font-size: 24px ;
+    color: black;
+    top: 30%;
+    left: 55%;
+    width: auto;
+    text-align: center;
+}
+
+#clear {
+   background-color: palegreen;
+   position: relative; 
+   padding: 12px;
+   font-size: 24px;
+   color: black;
+   top: 32%;
+   right: 5%;
+   text-align: center;
+}
+
+button {
+    border-radius: 10px;
+}
+
+textarea {
+    width: 90%;
+    margin: 20px;
+}
+
+#Submit {
+    background-color: palegreen;
+    margin-left: 33%;
+    padding: 15px 32px;
+    font-size: 24px;
+    color: black;
+}
+
+label {
+    margin-right: 12px;
+}
+
+input {
+    margin-bottom: 20px;
+    width: 50%;
+    border: 1.5px solid lightblue;
+}
+
+#createDiv {
+    margin-top: 20px ;
+    border-top: 1px solid lightblue;
+}
+
