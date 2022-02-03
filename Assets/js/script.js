@@ -31,7 +31,7 @@ var score = 0;
 var questionIndex = 0;
 
 // Start working code
-var currentTime = document.querySelector("#CurrrentTime");
+var currentTime = document.querySelector("#CurrentTime");
 var timer = document.querySelector("#startTime");
 var questionDiv = document.querySelector("#QuestionDiv");
 var wrapper = document.querySelector("#wrapper");
@@ -88,7 +88,7 @@ function compare(event){
     var element = event.target;
 
  if (element.matches("li")){
-        var createDiv = doucument.createElement("div");
+        var createDiv = document.createElement("div");
         createDiv.setAttribute("id","createDiv");
    // for correct answer
    if(element.textContent == questions[questionIndex].answer){
